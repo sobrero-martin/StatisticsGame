@@ -1,6 +1,10 @@
+VBoxContainer
+ColorRect
+TextureRect
+BoxContainer
+Container
 HBoxContainer
 Button
-Container
 Label
 Control
 Node2D

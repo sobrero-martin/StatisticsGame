@@ -1,0 +1,55 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://h5xi8uwuu0ou"]
+
+[sub_resource type="SystemFont" id="SystemFont_cri5h"]
+font_names = PackedStringArray("Constantia")
+font_italic = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cri5h"]
+bg_color = Color(0.118782185, 0.10047238, 0.011325533, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.6593832, 0.66007406, 0.48435396, 1)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r5c5t"]
+bg_color = Color(0.5294118, 0.47843137, 0.3254902, 0.68235296)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.2561489, 0.23716408, 0.11517268, 1)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1vtlc"]
+bg_color = Color(0.62311023, 0.6035656, 0.50013345, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.09400763, 0.088128515, 0.01230521, 0.9647059)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[resource]
+Button/colors/font_color = Color(0.12250983, 0.10362547, 0.024235956, 1)
+Button/colors/font_focus_color = Color(0.7589821, 0.6998553, 0.5533933, 1)
+Button/colors/font_hover_color = Color(0.6697207, 0.62586844, 0.53354484, 1)
+Button/colors/font_pressed_color = Color(0.65206707, 0.6299022, 0.50737756, 1)
+Button/font_sizes/font_size = 30
+Button/fonts/font = SubResource("SystemFont_cri5h")
+Button/styles/focus = SubResource("StyleBoxFlat_cri5h")
+Button/styles/hover = SubResource("StyleBoxFlat_r5c5t")
+Button/styles/normal = SubResource("StyleBoxFlat_1vtlc")

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c01521gbpf7x2"]
+[gd_scene load_steps=3 format=3 uid="uid://c01521gbpf7x2"]
 
-[ext_resource type="Theme" uid="uid://cbg32pn6btkwh" path="res://ui/themes/titles.tres" id="1_l6cm7"]
+[ext_resource type="Theme" uid="uid://h5xi8uwuu0ou" path="res://ui/themes/button_theme.tres" id="2_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://bcyh58t6lwo3t" path="res://ui/img/gameTitle.png" id="3_wu84c"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -10,23 +11,27 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="LabelTitle" type="Label" parent="."]
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.4939236
-anchor_top = 0.25385803
-anchor_right = 0.4939236
-anchor_bottom = 0.25385803
-offset_left = -181.0
-offset_top = -34.5
-offset_right = 181.0
-offset_bottom = 34.5
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -579.5
+offset_right = 579.5
+offset_bottom = 401.0
 grow_horizontal = 2
-grow_vertical = 2
-theme = ExtResource("1_l6cm7")
-text = "Menú principal"
-horizontal_alignment = 1
-metadata/_edit_use_anchors_ = true
+alignment = 1
+
+[node name="GameTitle" type="Sprite2D" parent="VBoxContainer"]
+position = Vector2(559.9999, 165)
+scale = Vector2(0.3014323, 0.2626953)
+texture = ExtResource("3_wu84c")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 1
@@ -47,6 +52,7 @@ alignment = 1
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 2
+theme = ExtResource("2_bqqt6")
 text = "Jugar"
 metadata/_edit_use_anchors_ = true
 
@@ -54,5 +60,6 @@ metadata/_edit_use_anchors_ = true
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 10
+theme = ExtResource("2_bqqt6")
 text = "Salir"
 metadata/_edit_use_anchors_ = true
