@@ -1,1 +1,3 @@
 res://scenes/main_menu.tscn
+res://scripts/MainMenu.cs
+res://scenes/game_root.tscn
