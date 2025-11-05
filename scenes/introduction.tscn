@@ -1,0 +1,83 @@
+[gd_scene load_steps=7 format=3 uid="uid://cwhaxsg7e5kab"]
+
+[ext_resource type="Theme" uid="uid://bmxpgr7rii2it" path="res://ui/themes/text_style.tres" id="1_fiwxd"]
+[ext_resource type="Script" uid="uid://clp4ax6i34qb8" path="res://scenes/introduction.cs" id="1_nvvsg"]
+[ext_resource type="AudioStream" uid="uid://pgtb18u126v2" path="res://sounds/typewriter.mp3" id="4_xofpe"]
+
+[sub_resource type="Animation" id="Animation_e3kje"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_tgans"]
+resource_name = "typewriter"
+length = 16.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10, 13, 16),
+"transitions": PackedFloat32Array(1, 1, 1, 1000000),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e3kje"]
+_data = {
+&"RESET": SubResource("Animation_e3kje"),
+&"typewriter": SubResource("Animation_tgans")
+}
+
+[node name="Introduction" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nvvsg")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 649.0
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 85.0
+offset_top = 238.0
+offset_right = 1083.0
+offset_bottom = 420.0
+theme = ExtResource("1_fiwxd")
+bbcode_enabled = true
+text = "Érase un aprendiz de un antiguo gremio de sabios estadísticos llamados \"Echoes of the Abyss\"... 
+
+Un día decidieron ir a exploran la \"Torre de la Incertidumbre\", un lugar donde cada piso representa un tipo diferente de experimento: aleatorio o determinístico.
+
+El aprendiz para lograr superar la torre necesitará usar herramientas de la probabilidad para avanzar y tomar decisiones óptimas bajo condiciones inciertas.
+"
+horizontal_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_e3kje")
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_xofpe")

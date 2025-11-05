@@ -1,4 +1,3 @@
-res://scenes/main_menu.tscn
-res://ui/themes/titles.tres
+res://scenes/introduction.tscn
 res://ui/themes/button_theme.tres
-res://scripts/MainMenu.cs
+res://ui/themes/text_style.tres

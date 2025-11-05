@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bmxpgr7rii2it"]
+
+[sub_resource type="SystemFont" id="SystemFont_vlun4"]
+font_names = PackedStringArray("Constantia")
+
+[resource]
+RichTextLabel/font_sizes/normal_font_size = 23
+RichTextLabel/fonts/normal_font = SubResource("SystemFont_vlun4")
