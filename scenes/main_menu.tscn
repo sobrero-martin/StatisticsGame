@@ -1,11 +1,52 @@
 [gd_scene load_steps=2 format=3 uid="uid://c01521gbpf7x2"]
 
-[ext_resource type="Script" uid="uid://duwtewthciwin" path="res://scripts/MainMenu.cs" id="1_l6cm7"]
+[ext_resource type="Theme" uid="uid://cbg32pn6btkwh" path="res://ui/themes/titles.tres" id="1_l6cm7"]
 
-[node name="MainMenu" type="Node2D"]
-script = ExtResource("1_l6cm7")
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "asfasdasf"
+[node name="LabelTitle" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5260417
+anchor_top = 0.23533951
+anchor_right = 0.5260417
+anchor_bottom = 0.23533951
+offset_left = -181.0
+offset_top = -34.5
+offset_right = 181.0
+offset_bottom = 34.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_l6cm7")
+text = "Menú principal"
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonPlay" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3081597
+anchor_top = 0.55401236
+anchor_right = 0.3081597
+anchor_bottom = 0.55401236
+offset_right = 200.0
+offset_bottom = 109.0
+text = "Jugar"
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonExit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5763889
+anchor_top = 0.55246913
+anchor_right = 0.5763889
+anchor_bottom = 0.55246913
+offset_right = 200.0
+offset_bottom = 109.0
+text = "Salir"
+metadata/_edit_use_anchors_ = true
