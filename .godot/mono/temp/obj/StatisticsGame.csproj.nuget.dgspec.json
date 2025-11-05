@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matia\\OneDrive\\Documentos\\JuegoEstadisticaYProbabilidad\\StatisticsGame.csproj": {}
+    "C:\\Programming\\godot\\statisticsgame\\StatisticsGame\\StatisticsGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matia\\OneDrive\\Documentos\\JuegoEstadisticaYProbabilidad\\StatisticsGame.csproj": {
+    "C:\\Programming\\godot\\statisticsgame\\StatisticsGame\\StatisticsGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matia\\OneDrive\\Documentos\\JuegoEstadisticaYProbabilidad\\StatisticsGame.csproj",
+        "projectUniqueName": "C:\\Programming\\godot\\statisticsgame\\StatisticsGame\\StatisticsGame.csproj",
         "projectName": "StatisticsGame",
-        "projectPath": "C:\\Users\\matia\\OneDrive\\Documentos\\JuegoEstadisticaYProbabilidad\\StatisticsGame.csproj",
-        "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matia\\OneDrive\\Documentos\\JuegoEstadisticaYProbabilidad\\.godot\\mono\\temp\\obj\\",
+        "projectPath": "C:\\Programming\\godot\\statisticsgame\\StatisticsGame\\StatisticsGame.csproj",
+        "packagesPath": "C:\\Users\\Martín\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\godot\\statisticsgame\\StatisticsGame\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Herramientas Visual Studio Mierda\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Martín\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -82,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

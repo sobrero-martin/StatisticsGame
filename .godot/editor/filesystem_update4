@@ -1,4 +1,2 @@
-res://scripts/MainMenu.cs
 res://scenes/main_menu.tscn
-res://scenes/game_root.tscn
-res://ui/themes/titles.tres
+res://scripts/MainMenu.cs
