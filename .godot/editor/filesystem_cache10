@@ -1,7 +1,7 @@
-ea4bc82a6ad023ab7ee23ee620429895
-::res://::1762304489
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1762304592
 icon.svg::CompressedTexture2D/CompressedTexture2D::7084910752920895068::1762303918::1762303926::1::::<><><>0<>0<>8bd38a2f34e663a35628c676fae7f315<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://scenes/::1762304249
-main_menu.tscn::PackedScene::6583107381102637025::1762304169::0::1::::<><><>0<>0<><>::
+::res://scenes/::1762304545
+main_menu.tscn::PackedScene::6583107381102637025::1762304545::0::1::::<><><>0<>0<><>::uid://duwtewthciwin::::res://scripts/MainMenu.cs
 ::res://scripts/::1762304256
 MainMenu.cs::CSharpScript::8609617185653496181::1762304190::0::1::::<><><>0<>0<><>::
