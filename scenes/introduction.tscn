@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://cwhaxsg7e5kab"]
+[gd_scene load_steps=8 format=3 uid="uid://cwhaxsg7e5kab"]
 
 [ext_resource type="Theme" uid="uid://bmxpgr7rii2it" path="res://ui/themes/text_style.tres" id="1_fiwxd"]
-[ext_resource type="Script" uid="uid://clp4ax6i34qb8" path="res://scenes/introduction.cs" id="1_nvvsg"]
+[ext_resource type="Script" uid="uid://clp4ax6i34qb8" path="res://scripts/introduction.cs" id="1_nvvsg"]
+[ext_resource type="Theme" uid="uid://dqc0yityoj42p" path="res://ui/themes/invisible_button.tres" id="2_nvvsg"]
 [ext_resource type="AudioStream" uid="uid://pgtb18u126v2" path="res://sounds/typewriter.mp3" id="4_xofpe"]
 
 [sub_resource type="Animation" id="Animation_e3kje"]
@@ -29,10 +30,10 @@ tracks/0/path = NodePath("RichTextLabel:visible_ratio")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 10, 13, 16),
-"transitions": PackedFloat32Array(1, 1, 1, 1000000),
+"times": PackedFloat32Array(0, 10, 13),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0.0, 1.0, 1.0, 0.0]
+"values": [0.0, 1.0, 1.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_e3kje"]
@@ -55,6 +56,14 @@ layout_mode = 0
 offset_right = 1151.0
 offset_bottom = 649.0
 color = Color(0, 0, 0, 1)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = -10.0
+offset_top = -9.0
+offset_right = 1186.0
+offset_bottom = 664.0
+theme = ExtResource("2_nvvsg")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
@@ -81,3 +90,21 @@ libraries = {
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_xofpe")
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -116.0
+offset_top = -40.0
+offset_right = 116.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("1_fiwxd")
+text = "Click para continuar..."
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="BackgroundClick"]

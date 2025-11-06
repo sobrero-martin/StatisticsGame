@@ -18,6 +18,10 @@ public partial class introduction : Control
 		audioPlayer.Play();
 	}
 	
+	public void BackgroundClick(){
+		GetTree().ChangeSceneToFile("res://scenes/main_menu.tscn");
+	}
+	
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{

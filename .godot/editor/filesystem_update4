@@ -1,3 +1,8 @@
-res://scenes/introduction.tscn
+res://scenes/main_menu.tscn
 res://ui/themes/button_theme.tres
 res://ui/themes/text_style.tres
+res://scripts/MainMenu.cs
+res://scenes/introduction.cs
+res://scenes/introduction.tscn
+res://scripts/introduction.cs
+res://ui/themes/invisible_button.tres

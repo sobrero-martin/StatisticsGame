@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ZSwX7IXAsHc=",
+  "dgSpecHash": "hFPTpxnLSbE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\matia\\OneDrive\\Documentos\\JuegoEstadisticaYProbabilidad\\StatisticsGame.csproj",
+  "projectFilePath": "C:\\Programming\\godot\\statisticsgame\\StatisticsGame\\StatisticsGame.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\matia\\.nuget\\packages\\godot.sourcegenerators\\4.5.1\\godot.sourcegenerators.4.5.1.nupkg.sha512",
-    "C:\\Users\\matia\\.nuget\\packages\\godotsharp\\4.5.1\\godotsharp.4.5.1.nupkg.sha512",
-    "C:\\Users\\matia\\.nuget\\packages\\godotsharpeditor\\4.5.1\\godotsharpeditor.4.5.1.nupkg.sha512"
+    "C:\\Users\\Martín\\.nuget\\packages\\godot.sourcegenerators\\4.5.1\\godot.sourcegenerators.4.5.1.nupkg.sha512",
+    "C:\\Users\\Martín\\.nuget\\packages\\godotsharp\\4.5.1\\godotsharp.4.5.1.nupkg.sha512",
+    "C:\\Users\\Martín\\.nuget\\packages\\godotsharpeditor\\4.5.1\\godotsharpeditor.4.5.1.nupkg.sha512"
   ],
   "logs": []
 }

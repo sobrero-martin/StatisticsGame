@@ -1,11 +1,13 @@
+RichTextLabel
+Label
+Button
+AnimatedSprite2D
 VBoxContainer
 ColorRect
 TextureRect
 BoxContainer
 Container
 HBoxContainer
-Button
-Label
 Control
 Node2D
 Node
